@@ -1,16 +1,4 @@
 # Movie GPT
- - Create React APP
- - Configure Tailwind
- - Header
- - Routing of App
- - Sign in Form
- - Sign up Form
- - Form Validation with regex
- - useRef Hook
- - Firebase Setup
- - Deploying out app production
- - Create Signup User Account
-
 
 # Features
 - Login / Sign Up
@@ -23,6 +11,6 @@
     - Title & Description
     - Movie Suggestion 
        - MovieLists * End list
-- PowerMovieSuggestionGpt 
+#Gpt Power Movie Suggestion
   - Search Bar
   - Movie Suggestions

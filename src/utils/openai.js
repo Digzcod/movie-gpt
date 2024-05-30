@@ -1,7 +1,5 @@
 import OpenAI from "openai";
 
-export const OPENAI_APIKEY =
-  "sk-proj-PNLiu7EfpK48kUv7F1H1T3BlbkFJt4QmECTVgHAArbdBtC6m";
 
 export const GPT_AI = new OpenAI({
   apiKey: process.env.REACT_APP_OPENAI_KEY,

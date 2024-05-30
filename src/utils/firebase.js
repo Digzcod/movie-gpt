@@ -12,7 +12,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyB_FwLjg0OJ2_QXyc8dzGPa1jDOYWz0Bto",
+  apiKey: process.env.REACT_APP_GOOGLE_KEY,
   authDomain: "moviegpt-f020b.firebaseapp.com",
   projectId: "moviegpt-f020b",
   storageBucket: "moviegpt-f020b.appspot.com",

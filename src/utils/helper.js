@@ -12,15 +12,12 @@ export const TMDBAPI_URL =
 // export const TMDBVIDEO_API_URL ='https://api.themoviedb.org/3/movie/823464/videos?language=en-US'
 
 export const APIKEY_TMDB = "18d7f9458c6471c2a512f9007cf1208b";
-export const TMDB_HEADER =
-  "";
 
 export const URL_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxOGQ3Zjk0NThjNjQ3MWMyYTUxMmY5MDA3Y2YxMjA4YiIsInN1YiI6IjY2NDk5NjZjNzhjZmM4OGEyMDY2MWJlOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.o0JXM4N9asVCexJxUNDLMmzfS9QeaelBpM_oIQJ_5QY",
+    Authorization: process.env.REACT_APP_TMDB_API_KEY,
   },
 };
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w300/";

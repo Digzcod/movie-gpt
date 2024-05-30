@@ -2,7 +2,7 @@ import OpenAI from "openai";
 
 
 export const GPT_AI = new OpenAI({
-  apiKey: process.env.REACT_APP_OPENAI_KEY,
+  apiKey: process.env.REACT_APP_KEY_OPEN_AI,
   dangerouslyAllowBrowser: true, // This is the default and can be omitted
 });
 

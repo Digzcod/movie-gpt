@@ -11,7 +11,8 @@ export const TMDBAPI_URL =
   "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1";
 // export const TMDBVIDEO_API_URL ='https://api.themoviedb.org/3/movie/823464/videos?language=en-US'
 
-export const APIKEY_TMDB = "18d7f9458c6471c2a512f9007cf1208b";
+export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w300/";
+
 
 export const URL_OPTIONS = {
   method: "GET",
@@ -20,7 +21,6 @@ export const URL_OPTIONS = {
     Authorization: process.env.REACT_APP_TMDB_API_KEY,
   },
 };
-export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w300/";
 
 export const SUPPORTED_LANGUAGE = [
   {

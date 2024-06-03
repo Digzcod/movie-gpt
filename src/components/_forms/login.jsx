@@ -12,10 +12,10 @@ const Login = () => {
         className="w-full h-[100vh] flex object-fit"
         style={{ backgroundImage: `url(${Image_BG_NetFlix})` }}
       >
-        <section className="mx-auto mt-[10rem] px-2">
+        <section className="mx-auto mt-[10rem] px-5">
           <form
             onSubmit={formik.handleSubmit}
-            className="bg-black bg-opacity-65 w-auto sm:w-400px md:w-p[500px] px-[2rem] py-[3rem]"
+            className="bg-black bg-opacity-65 w-full sm:w-[400px] md:w-[500px] px-[2rem] py-[3rem]"
           >
             <h1 className="text-2xl text-white font-bold mb-3">
               {signIn ? "Login" : "Sign up"}
@@ -45,6 +45,7 @@ const Login = () => {
               onBlur={formik.handleBlur}
               value={formik.values.email}
             />
+
             {formik.touched.email && formik.errors.email ? (
               <div className="text-red-600">{formik.errors.email}</div>
             ) : null}
@@ -113,16 +114,18 @@ const Login = () => {
                 </span>
               </span>
             ) : (
-              <span className="text-sm my-5 text-white ">
-                Already have an account?
-                <span
-                  onClick={() => setSignIn(!signIn)}
-                  className="text-white ml-2 font-bold hover:border-b-[2px] hover:cursor-pointer hover:border-red-500"
-                >
-                  {" "}
-                  Please sign in here
+              <div className="my-2">
+                <span className="text-sm my-5 text-white ">
+                  Already have an account?
+                  <span
+                    onClick={() => setSignIn(!signIn)}
+                    className="text-white ml-2 font-bold hover:border-b-[2px] hover:cursor-pointer hover:border-red-500"
+                  >
+                    {" "}
+                    Please sign in here
+                  </span>
                 </span>
-              </span>
+              </div>
             )}
           </form>
         </section>

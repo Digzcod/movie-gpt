@@ -23,7 +23,7 @@ const SecondaryContainer = () => {
   if (!trending || trending.length === 0) return null;
   if (!moviesTrending || moviesTrending.length === 0) return null;
   return (
-    <div className="w-[99vw] bg-gray-900">
+    <div className="max-md:w-auto md:w-[99vw] bg-gray-900">
       <div className="relative -top-[13.5rem] ">
         <MovieList title={"Now Playing"} movies={moviesNowPlaying} />
         <MovieList title={"Trending"} movies={trending} />

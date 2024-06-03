@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../header";
+import Header from "../_main/header";
 import MainContainer from "./MainContainer";
 import SecondaryContainer from "./SecondaryContainer";
 import SearchPage from "../_searchGpt/SearchPage";

@@ -7,10 +7,10 @@ const GptMovieSuggestion = () => {
   if (loading ) return null;
   return (
     <div
-      className="w-full  py-5 px-[3rem] h-auto rounded-xl"
-      style={{ backgroundColor: "rgba(1, 0, 0, 0.75)" }}
+      className="w-full py-5 max-md:px-[2rem] lg:px-[2rem] h-auto rounded-xl bg-black bg-opacity-50"
+      
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {gptMovieResults.map((movie, index) => (
           <section
             key={movie?.id || index}

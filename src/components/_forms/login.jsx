@@ -12,10 +12,10 @@ const Login = () => {
         className="w-full h-[100vh] flex object-fit"
         style={{ backgroundImage: `url(${Image_BG_NetFlix})` }}
       >
-        <section className="mx-auto mt-[10rem]">
+        <section className="mx-auto mt-[10rem] px-2">
           <form
             onSubmit={formik.handleSubmit}
-            className="bg-black bg-opacity-65 w-[500px] px-[2rem] py-[3rem]"
+            className="bg-black bg-opacity-65 w-auto sm:w-400px md:w-p[500px] px-[2rem] py-[3rem]"
           >
             <h1 className="text-2xl text-white font-bold mb-3">
               {signIn ? "Login" : "Sign up"}

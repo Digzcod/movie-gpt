@@ -54,8 +54,8 @@ const Header = () => {
                   </span>
                 </div>
                 {showLanguage && (
-                  <div ref={refClickOutside} className="absolute mt-5 right-0">
-                    <ul className="w-[10rem] py-3 bg-gray-800 text-lg text-white shadow-lg rounded-lg">
+                  <div ref={refClickOutside} className="absolute top-full mt-2">
+                    <ul className="w-[10rem]  py-3 bg-gray-800 text-lg text-white shadow-lg rounded-lg">
                       {SUPPORTED_LANGUAGE.map((lg) => (
                         <li
                           key={lg.identifier}

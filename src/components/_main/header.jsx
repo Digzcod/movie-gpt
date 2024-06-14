@@ -80,7 +80,7 @@ const Header = () => {
               </button>
               <img
                 className="w-[2rem] h-[2rem] rounded"
-                src={user ? user.photoURL : USER_PHOTO}
+                src={user && USER_PHOTO}
                 alt={user ? "User" : "User"}
               />
               <span className="text-md font-medium text-white px-2">
